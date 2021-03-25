@@ -1,5 +1,36 @@
-<%- include("../partials/header")  %> 
-<body>
-    
-</body>
-</html>
+<%- include("../partials/header") %>
+
+    <body>
+        <table class="table table-striped">
+            <tr>
+                <th style="text-align: center; font-size: x-large;">Title</th>
+                <th style="text-align: center; font-size: x-large;">Genre</th>
+                <th style="text-align: center; font-size: x-large;">Writer</th>
+                <th style="text-align: center; font-size: x-large;">Actors</th>
+                <th style="text-align: center; font-size: x-large;">Plot</th>
+                <th style="text-align: center; font-size: x-large;">Poster</th>
+            </tr>
+            <tr>
+                <tbody>
+                    <td style="text-align: center; font-size: large; vertical-align: middle;">
+                        <%= Title %>
+                    </td>
+                    <td style="text-align: center; font-size: large; vertical-align: middle;">
+                        <%= Genre %>
+                    </td>
+                    <td style="text-align: center; font-size: large; vertical-align: middle;">
+                        <%= Writer %>
+                    </td>
+                    <td style="text-align: center; font-size: large; vertical-align: middle;">
+                        <%= Actors %>
+                    </td>
+                    <td style="text-align: center; font-size: large; vertical-align: middle;">
+                        <%= Plot %>
+                    </td>
+                    <td style="text-align: center;"><img style="max-width: 50%; vertical-align: middle;" src="<%= Poster %>"> </td>
+            </tr>
+            </tbody>
+        </table>
+    </body>
+
+    </html>

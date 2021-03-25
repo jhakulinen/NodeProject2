@@ -9,8 +9,8 @@ const PORT = process.env.PORT || 8080;
 
 app.get("/", function (req, res){
     var json = require(__dirname + "/exampledata.json")
-    res.render("pages/index");
-    console.log(json);
+    res.render("pages/index", json);
+    
 })
 
 app.get("*", function(req, res){
